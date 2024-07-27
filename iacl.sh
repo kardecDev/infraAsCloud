@@ -10,33 +10,33 @@ groupadd GRP_VEN
 groupadd GRP_SEC
 
 echo "Criando os usuarios do grupo GRP_ADM: carlos, maria, joao"
-useradd carlos -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_ADM 
+useradd carlos -m -s/bin/zsh -p $(openssl passwd 123@Mudar) -G GRP_ADM 
 passwd carlos -e
 
-useradd maria -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_ADM
+useradd maria -m -s/bin/zsh -p $(openssl passwd 123@Mudar) -G GRP_ADM
 passwd maria -e
 
-useradd joao -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_ADM
+useradd joao -m -s/bin/zsh -p $(openssl passwd 123@Mudar) -G GRP_ADM
 passwd joao -e
 
 echo "Criando usuarios para grupo GRP_VEN: debora, sebastiana, roberto"
-useradd debora -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_VEN
+useradd debora -m -s/bin/zsh -p $(openssl passwd 123@Mudar) -G GRP_VEN
 passwd debora -e
 
-useradd sebastiana -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_VEN
+useradd sebastiana -m -s/bin/zsh -p $(openssl passwd 123@Mudar) -G GRP_VEN
 passwd sebastiana -e
 
-useradd roberto -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_VEN
+useradd roberto -m -s/bin/zsh -p $(openssl passwd 123@Mudar) -G GRP_VEN
 passwd roberto -e
 
 echo "Criando usuarios para grupo GRP_SEC: josefina, amanda, rogerio"
-useradd josefina -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_SEC
+useradd josefina -m -s/bin/zsh -p $(openssl passwd 123@Mudar) -G GRP_SEC
 passwd josefina -e
 
-useradd amanda -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_SEC
+useradd amanda -m -s/bin/zsh -p $(openssl passwd 123@Mudar) -G GRP_SEC
 passwd amanda -e
 
-useradd rogerio -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_SEC
+useradd rogerio -m -s/bin/zsh -p $(openssl passwd 123@Mudar) -G GRP_SEC
 passwd rogerio -e
 
 echo "Determinando dono e grupo dos diretorios"
