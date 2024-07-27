@@ -36,8 +36,8 @@ passwd josefina -e
 useradd amanda -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_SEC
 passwd amanda -e
 
-useradd carlos -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_SEC
-passwd carlos -e
+useradd rogerio -m -s/bin/zsh -p $(openssl passwd -crypt 123@Mudar) -G GRP_SEC
+passwd rogerio -e
 
 echo "Determinando dono e grupo dos diretorios"
 chown root:GRP_ADM /adm
